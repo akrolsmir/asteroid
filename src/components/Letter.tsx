@@ -9,6 +9,7 @@ import { Container } from './Container'
 import { SectionHeading } from './SectionHeading'
 import { db } from '@/db/init'
 import { users } from '@/db/schema'
+import { revalidatePath } from 'next/cache'
 
 export default async function Letter() {
   const signers = await db.select().from(users)
@@ -74,9 +75,15 @@ async function LetterForm() {
     console.log(newSigner)
 
     // mutate data
-    await db.insert(users).values(newSigner)
-    console.log('done')
+    try {
+      await db.insert(users).values(newSigner)
+      console.log('done')
+    } catch (error) {
+      console.error(error)
+    }
     // refresh page
+
+    revalidatePath('/')
   }
   return (
     <div className="mx-auto mt-16 w-full max-w-prose space-y-2">
