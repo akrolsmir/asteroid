@@ -54,14 +54,15 @@ export function Hero() {
               Open Asteroid Impact
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
-              We're committed to having as much impact as possible. Help us reshape the world – or yell at us
-              from the sidelines. The choice is yours.
+              We&apos;re committed to having as much impact as possible. Help us
+              reshape the world – or yell at us from the sidelines. The choice
+              is yours.
             </p>
             <div className="mt-8 flex gap-4">
-              <Button href="#free-chapters" color="blue">
+              <Button href="#letter" color="blue">
                 Sign our open letter
               </Button>
-              <Button href="#pricing" variant="outline" color="blue">
+              <Button href="#about-us" variant="outline" color="blue">
                 Learn more
               </Button>
             </div>

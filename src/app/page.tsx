@@ -35,7 +35,7 @@ export default function Home() {
         </p>
       </Testimonial>
       <Letter />
-      <Screencasts />
+      {/* <Screencasts /> */}
       <Testimonial
         id="testimonial-from-gerardo-stark"
         author={{
@@ -49,10 +49,10 @@ export default function Home() {
           frustrated and gave up. Now I sell my own custom icon sets online.”
         </p>
       </Testimonial>
-      <Resources />
-      <FreeChapters />
-      <Pricing />
-      <Testimonials />
+      {/* <Resources /> */}
+      {/* <FreeChapters /> */}
+      {/* <Pricing /> */}
+      {/* <Testimonials /> */}
       <Author />
       <Footer />
     </>
