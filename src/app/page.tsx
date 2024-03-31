@@ -3,6 +3,7 @@ import { Footer } from '@/components/Footer'
 import { FreeChapters } from '@/components/FreeChapters'
 import { Hero } from '@/components/Hero'
 import { Introduction } from '@/components/Introduction'
+import Letter from '@/components/Letter'
 import { NavBar } from '@/components/NavBar'
 import { Pricing } from '@/components/Pricing'
 import { Resources } from '@/components/Resources'
@@ -33,6 +34,7 @@ export default function Home() {
           can create any icon I need in no time. Great resource!”
         </p>
       </Testimonial>
+      <Letter />
       <Screencasts />
       <Testimonial
         id="testimonial-from-gerardo-stark"
