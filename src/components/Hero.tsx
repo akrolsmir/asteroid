@@ -54,7 +54,7 @@ export function Hero() {
               Open Asteroid Impact
             </h1>
             <p className="mt-4 text-3xl text-slate-600">
-              We’re focused on impact. Help us reshape the world – or yell at us
+              We're committed to having as much impact as possible. Help us reshape the world – or yell at us
               from the sidelines. The choice is yours.
             </p>
             <div className="mt-8 flex gap-4">
