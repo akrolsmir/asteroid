@@ -11,9 +11,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Everything Starts as a Square - Get lost in the world of icon design',
-  description:
-    'A book and video course that teaches you how to design your own icons from scratch.',
+  title: 'Open Asteroid Impact',
+  description: '(Re)shaping the world as we know it',
 }
 
 export default function RootLayout({

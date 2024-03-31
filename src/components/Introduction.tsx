@@ -12,21 +12,24 @@ export function Introduction() {
     >
       <Container className="text-lg tracking-tight text-slate-700">
         <p className="font-display text-4xl font-bold tracking-tight text-slate-900">
-          “Everything Starts as a Square” is a book and video course that
-          teaches you a simple method to designing icons that anyone can learn.
+          We&apos;re a little asteroid mining company, with big dreams.
         </p>
         <p className="mt-4">
-          Before I learned how to design icons myself, I always imagined that
-          they were drawn by hand using the pen tool, some sort of fancy
-          graphics tablet, and hours and hours spent manually fine-tuning bezier
-          curves.
+          When most people think about asteroid mining, they think of getting
+          all the mining equipment to space and carefully mining and refining
+          ore in space, before bringing the ore back down in a controlled
+          landing. But humanity has zero experience in Zero-G mining in the
+          vacuum of space. This is obviously very inefficient.
         </p>
         <p className="mt-4">
-          But it turns out this isn’t how great icon designers work at all.
+          Instead, it’s much more efficient to bring the asteroids down to Earth
+          first, and mine it on the ground.
         </p>
         <p className="mt-4">
-          In “Everything Starts as a Square”, you’ll learn the systems experts
-          use to create pixel perfect icons, without relying on a steady hand.
+          We are first and foremost an asteroid mining *safety* company. That is
+          why we need to race as fast as possible to be at the forefront of
+          asteroid redirection, so more dangerous companies don’t get there
+          before us, letting us set safety standards.
         </p>
         <ul role="list" className="mt-8 space-y-3">
           {[
@@ -42,18 +45,17 @@ export function Introduction() {
             </li>
           ))}
         </ul>
-        <p className="mt-8">
-          By the end of the book, you’ll have all the confidence you need to dig
-          in and start creating beautiful icons that can hold their own against
-          any of the sets you can find online.
+        <p className="mt-8 italic">
+          “Mitigating the risk of extinction from human-directed asteroids
+          should be a global priority alongside other civilizational risks such
+          as nuclear war and artificial general intelligence.”
         </p>
         <p className="mt-10">
           <Link
             href="#free-chapters"
             className="text-base font-medium text-blue-600 hover:text-blue-800"
           >
-            Get two free chapters straight to your inbox{' '}
-            <span aria-hidden="true">&rarr;</span>
+            Sign our open letter <span aria-hidden="true">&rarr;</span>
           </Link>
         </p>
       </Container>
