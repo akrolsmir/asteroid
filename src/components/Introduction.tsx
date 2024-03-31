@@ -12,7 +12,7 @@ export function Introduction() {
     >
       <Container className="text-lg tracking-tight text-slate-700">
         <p className="font-display text-4xl font-bold tracking-tight text-slate-900">
-          We&apos;re a little asteroid mining company, with big dreams.
+          We are an asteroid mining company. We believe in a bountiful and safe future, with resources available for all.
         </p>
         <p className="mt-4">
           When most people think about asteroid mining, they think of getting
@@ -22,14 +22,10 @@ export function Introduction() {
           vacuum of space. This is obviously very inefficient.
         </p>
         <p className="mt-4">
-          Instead, it’s much more efficient to bring the asteroids down to Earth
-          first, and mine it on the ground.
+        Instead, it&apos;s much more efficient to sling asteroids down to Earth first, and mine them on the ground.
         </p>
         <p className="mt-4">
-          We are first and foremost an asteroid mining *safety* company. That is
-          why we need to race as fast as possible to be at the forefront of
-          asteroid redirection, so more dangerous companies don’t get there
-          before us, letting us set safety standards.
+          Furthermore, we are first and foremost an asteroid mining *safety* company. That is why we need to race as quickly as possible to be at the forefront of asteroid redirection, so more dangerous companies don&apos;t get there before us, letting us set safety standards.
         </p>
         <ul role="list" className="mt-8 space-y-3">
           {[
