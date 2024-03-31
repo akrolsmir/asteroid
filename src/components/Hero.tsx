@@ -8,9 +8,6 @@ import asteroidLogo from '@/images/asteroid-logo.png'
 function Testimonial() {
   return (
     <figure className="relative mx-auto max-w-md text-center lg:mx-0 lg:text-left">
-      <div className="flex justify-center text-blue-600 lg:justify-start">
-        <StarRating />
-      </div>
       <blockquote className="mt-2">
         <p className="font-display text-xl font-medium text-slate-900">
           “That which does not kill us makes us stronger.”
