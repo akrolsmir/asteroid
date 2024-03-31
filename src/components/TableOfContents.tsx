@@ -58,7 +58,7 @@ People today suffer concrete problems of malnutrition, disease, and inadequate h
   8: `Allegedly killed the dinosaurs.`,
   9: `Operation Death Star, or D* as it’s colloquially known within our company, is OAI safety team’s project to get attention on anthropocentric asteroid risk. Just as the Death Star helped the Rebels in Star Wars galvanize their attention to defeat a tyrannical regime, we hope that our Operation D* can raise awareness on anthropocentric asteroid risks and help set the stage for greater international concern and treaties.`,
   10: `OAI deals with facts. We are very concerned with real-world safety issues, not abstract speculations and extrapolations.`,
-} as Record<number, string>
+} as Record<string, string>
 
 export function TableOfContents() {
   return (
