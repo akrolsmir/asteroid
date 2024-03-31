@@ -14,7 +14,7 @@ const tableOfContents = {
   },
   Criticism: {
     4: 'As CEO, you have recently joined prominent astrophysicists and the CEOs of other leading space companies in signing the Safety Statement “Mitigating the risk of extinction from human-directed asteroids should be a global priority alongside other civilizational risks such as nuclear war and artificial general intelligence” Why are you working on something that might cause an extinction risk?',
-    5: 'Okay, but why not have your entire field slow down?',
+    5: 'Okay, but why can’t your entire industry slow down?',
     6: 'There have been recent leaks of your attempts to raise between 100 billion dollars and 7 trillion dollars on fundamental rocket fuels research, far more than have ever been spent on rocket fuels so far. Does this not contradict your previous claims about trying to be prepared for an inevitable overhang?',
     7: 'Prominent ethicists, astrophysicists, and safety engineers have spoken out against much of the work of frontier space companies in redirecting larger and larger asteroids. They argue that lobbing a sufficiently large asteroid might create an event as big as the Chicxulub impact that killed the dinosaurs.',
     8: 'Some of your projects, for example Operation Death Star, entail multi-year plans to bring colossal rare-earth-heavy asteroids from the Outer Solar System to Near-Earth Orbit, in the hopes that in the intervening years asteroid alignment technology will become mature enough that you can land them safely once they arrive. Aren’t you worried that you might accidentally miss the orbit and have your Operation D* asteroid enter Earth’s gravity well and crash on Earth?',
