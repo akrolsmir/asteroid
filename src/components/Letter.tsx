@@ -8,11 +8,14 @@ import { Button } from '@/components/ui/button'
 import { Container } from './Container'
 import { SectionHeading } from './SectionHeading'
 import { db } from '@/db/init'
-import { users } from '@/db/schema'
+import { User, users } from '@/db/schema'
 import { revalidatePath } from 'next/cache'
 
 export default async function Letter() {
   const signers = await db.select().from(users)
+
+  const verified = signers.filter((signer) => signer.verified)
+  const unverified = signers.filter((signer) => !signer.verified)
 
   return (
     <section
@@ -25,41 +28,50 @@ export default async function Letter() {
           Open Letter
         </SectionHeading>
       </Container>
-      <Container size="md" className="mt-16">
+      <Container size="sm" className="mt-16">
         <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
           An Open Letter to the World
         </h2>
         <div className="md:text-xl/lg-2xl space-y-2 text-base leading-loose">
           <p>
-            We stand at a critical juncture in the history of our planet. The
-            signs of climate change are all around us, from extreme weather
-            events to rising sea levels. The time for action is now.
-          </p>
-          <p>
-            We cannot afford to be complacent. The decisions we make today will
-            have a profound impact on the world we leave to future generations.
-            It is our moral obligation to preserve the planet for our children
-            and grandchildren.
+            Mitigating the risk of extinction from human-directed asteroids
+            should be a global priority alongside other civilizational risks
+            such as nuclear war and artificial general intelligence.
           </p>
         </div>
       </Container>
 
-      <Container size="md" className="mt-16">
+      <Container size="sm" className="mt-16">
         <h3 className="text-2xl font-bold tracking-tighter md:text-3xl/tight">
           Signatories
         </h3>
         <ul className="mt-4 space-y-2">
-          {signers.map((signer) => (
-            <li key={signer.id}>
-              <span className="font-bold">{signer.fullName}</span> -{' '}
-              {signer.bio}
-            </li>
+          {verified.map((signer) => (
+            <Signatory key={signer.id} signer={signer} />
+          ))}
+        </ul>
+        {/* Unverified signatories */}
+        <p className="mt-8 text-lg font-bold tracking-tighter text-gray-500 md:text-xl/tight">
+          Unverified
+        </p>
+        <ul className="space-y-2 text-gray-400">
+          {unverified.map((signer) => (
+            <Signatory key={signer.id} signer={signer} />
           ))}
         </ul>
       </Container>
 
       <LetterForm />
     </section>
+  )
+}
+
+function Signatory(props: { signer: User }) {
+  return (
+    <li>
+      <span className="font-bold">{props.signer.fullName}</span> -{' '}
+      {props.signer.bio}
+    </li>
   )
 }
 
@@ -81,8 +93,8 @@ async function LetterForm() {
     } catch (error) {
       console.error(error)
     }
-    // refresh page
 
+    // refresh page
     revalidatePath('/')
   }
   return (
