@@ -9,7 +9,7 @@ const sections = [
     id: 'table-of-contents',
     title: (
       <>
-        <span className="hidden lg:inline">Table of contents</span>
+        <span className="hidden lg:inline">FAQ</span>
         <span className="lg:hidden">Contents</span>
       </>
     ),
