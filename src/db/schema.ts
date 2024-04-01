@@ -16,6 +16,7 @@ export const users = pgTable(
     bio: text('bio'),
     verified: boolean('verified').default(false),
     createdAt: timestamp('created_at').defaultNow(),
+    hidden: boolean('hidden').default(false),
   },
   (user) => {
     return {

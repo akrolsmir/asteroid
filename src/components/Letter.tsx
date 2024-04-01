@@ -15,9 +15,10 @@ import { Heading3 } from './Headings'
 export const revalidate = 30
 
 export default async function Letter() {
-  const signers = await db.select().from(users)
+  let signers = await db.select().from(users)
   // Sort by createdAt, which is a timestamp string
   signers.sort((a, b) => a.createdAt!.getTime() - b.createdAt!.getTime())
+  signers = signers.filter((signer) => !signer.hidden)
 
   const verified = signers.filter((signer) => signer.verified)
   const unverified = signers.filter((signer) => !signer.verified)
