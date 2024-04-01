@@ -10,9 +10,12 @@ import { SectionHeading } from './SectionHeading'
 import { db } from '@/db/init'
 import { User, users } from '@/db/schema'
 import { revalidatePath } from 'next/cache'
+import { Heading3 } from './Headings'
 
 export default async function Letter() {
   const signers = await db.select().from(users)
+  // Sort by createdAt, which is a timestamp string
+  signers.sort((a, b) => a.createdAt!.getTime() - b.createdAt!.getTime())
 
   const verified = signers.filter((signer) => signer.verified)
   const unverified = signers.filter((signer) => !signer.verified)
@@ -41,20 +44,21 @@ export default async function Letter() {
         </div>
       </Container>
 
-      <Container size="sm" className="mt-16">
-        <h3 className="text-2xl font-bold tracking-tighter md:text-3xl/tight">
+      <Container size="sm" className="mt-16 tracking-tight">
+        {/* <h3 className="text-2xl font-bold tracking-tighter md:text-3xl/tight">
           Signatories
-        </h3>
+        </h3> */}
+        <Heading3>Signatories</Heading3>
         <ul className="mt-4 space-y-2">
           {verified.map((signer) => (
             <Signatory key={signer.id} signer={signer} />
           ))}
         </ul>
         {/* Unverified signatories */}
-        <p className="mt-8 text-lg font-bold tracking-tighter text-gray-500 md:text-xl/tight">
-          Unverified
+        <p className="mt-8 text-lg font-bold text-gray-500 md:text-xl/tight">
+          Not yet verified
         </p>
-        <ul className="space-y-2 text-gray-400">
+        <ul className="mt-4 space-y-2 text-gray-400">
           {unverified.map((signer) => (
             <Signatory key={signer.id} signer={signer} />
           ))}
