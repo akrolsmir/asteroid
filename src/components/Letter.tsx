@@ -55,9 +55,9 @@ export default async function Letter() {
           ))}
         </ul>
         {/* Unverified signatories */}
-        <p className="mt-8 text-lg font-bold text-gray-500 md:text-xl/tight">
+        {/*<p className="mt-8 text-lg font-bold text-gray-500 md:text-xl/tight">
           Not yet verified
-        </p>
+        </p> */}
         {/* <ul className="mt-4 space-y-2 text-gray-400">
           {unverified.map((signer) => (
             <Signatory key={signer.id} signer={signer} />
