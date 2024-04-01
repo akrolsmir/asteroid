@@ -12,6 +12,8 @@ import { User, users } from '@/db/schema'
 import { revalidatePath } from 'next/cache'
 import { Heading3 } from './Headings'
 
+export const revalidate = 30
+
 export default async function Letter() {
   const signers = await db.select().from(users)
   // Sort by createdAt, which is a timestamp string
