@@ -13,6 +13,8 @@ import { Testimonial } from '@/components/Testimonial'
 import { Testimonials } from '@/components/Testimonials'
 import avatarImage1 from '@/images/avatars/avatar-1.png'
 import avatarImage2 from '@/images/avatars/avatar-2.png'
+import tomLehrer from '@/images/avatars/tom-lehrer.jpg'
+import jesus from '@/images/avatars/jesus.png'
 
 export default function Home() {
   return (
@@ -24,14 +26,13 @@ export default function Home() {
       <Testimonial
         id="testimonial-from-tommy-stroman"
         author={{
-          name: 'Tommy Stroman',
-          role: 'Front-end developer',
-          image: avatarImage1,
+          name: 'Tom Lehrer',
+          role: 'mathematician and musician, in an ode to the great late Wehner von Braun, father of NASA',
+          image: tomLehrer,
         }}
       >
         <p>
-          “I didn’t know a thing about icon design until I read this book. Now I
-          can create any icon I need in no time. Great resource!”
+          “Once the rockets are going up, who cares where they’re coming down?”
         </p>
       </Testimonial>
       <Letter />
@@ -39,14 +40,15 @@ export default function Home() {
       <Testimonial
         id="testimonial-from-gerardo-stark"
         author={{
-          name: 'Gerardo Stark',
-          role: 'Creator of Pandemicons',
-          image: avatarImage2,
+          name: 'Jesus of Nazareth',
+          role: 'loosely translated',
+          image: jesus,
         }}
       >
         <p>
-          “I’ve tried to create my own icons in the past but quickly got
-          frustrated and gave up. Now I sell my own custom icon sets online.”
+          “Now I say to you that you are Peter (which means ‘rock’), and upon
+          this rock I will build my C Corp owned by a 501c3, and all the powers
+          of hell will not conquer it.”
         </p>
       </Testimonial>
       {/* <Resources /> */}

@@ -27,7 +27,7 @@ export function Introduction() {
         <p className="mt-4">
           Furthermore, we are first and foremost an asteroid mining *safety* company. That is why we need to race as quickly as possible to be at the forefront of asteroid redirection, so more dangerous companies don&apos;t get there before us, letting us set safety standards.
         </p>
-        <ul role="list" className="mt-8 space-y-3">
+        {/* <ul role="list" className="mt-8 space-y-3">
           {[
             'Using boolean operations to combine basic shapes into complex icons',
             'How to adapt icons to different sizes',
@@ -40,7 +40,7 @@ export function Introduction() {
               <span className="ml-4">{feature}</span>
             </li>
           ))}
-        </ul>
+        </ul> */}
         <p className="mt-8 italic">
           “Mitigating the risk of extinction from human-directed asteroids
           should be a global priority alongside other civilizational risks such
