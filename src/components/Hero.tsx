@@ -35,9 +35,9 @@ export function Hero() {
               patternTransform="translate(112 64)"
             />
           </div>
-          <div className="relative z-10 mx-auto flex w-64 rounded-xl bg-gradient-to-br from-blue-900 via-blue-700 to-purple-500 px-40 py-48 shadow-xl md:w-80 lg:w-auto">
+          <div className="relative z-10 mx-auto flex w-80 rounded-xl bg-gradient-to-br from-blue-900 via-blue-700 to-purple-500 p-16 shadow-xl md:w-80 lg:w-auto lg:px-40 lg:py-48">
             <Image
-              className="w-full scale-[2] invert"
+              className="w-full scale-100 invert lg:max-w-40 lg:scale-[2]"
               src={asteroidLogo}
               alt=""
               priority
