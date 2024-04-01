@@ -32,10 +32,10 @@ export default async function Letter() {
         </SectionHeading>
       </Container>
       <Container size="sm" className="mt-16">
-        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+        <h2 className="text-3xl font-bold tracking-tight md:text-4xl/tight">
           An Open Letter to the World
         </h2>
-        <div className="md:text-xl/lg-2xl space-y-2 text-base leading-loose">
+        <div className="md:text-xl/lg-2xl mt-6 space-y-2 text-2xl leading-loose tracking-tight text-slate-700">
           <p>
             Mitigating the risk of extinction from human-directed asteroids
             should be a global priority alongside other civilizational risks
