@@ -113,7 +113,7 @@ export function Pricing() {
     >
       <Container>
         <SectionHeading number="4" id="pricing-title">
-          Pricing
+          About Us
         </SectionHeading>
         <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
           Pick your package

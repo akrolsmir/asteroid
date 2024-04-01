@@ -9,17 +9,15 @@ import { SectionHeading } from '@/components/SectionHeading'
 const tableOfContents = {
   Overview: {
     1: 'What does the “Open” in Open Asteroid Impact stand for?',
-    2: 'What about the “rocket alignment problem?” ',
-    3: 'Critics say that this is because the asteroids directed so far are much smaller than you’ve planned to scale up to, and have luckily only hit oceans and uninhabited areas',
+    2: 'What about the rocket alignment problem? ',
+    3: 'Critics say that this is because the asteroids directed so far are much smaller than you’ve planned to scale up to, even in the near future. They have also luckily only hit oceans and uninhabited areas',
   },
   Criticism: {
-    4: 'As CEO, you have recently joined prominent astrophysicists and the CEOs of other leading space companies in signing the Center for Asteroid Redirection Safety (CARS) “Mitigating the risk of extinction from human-directed asteroids should be a global priority alongside other civilizational risks such as nuclear war and artificial general intelligence” Why are you working on something that might cause an extinction risk?',
-    5: 'Okay, but why not slow it down?',
-    6: 'Something something raising 7 trillion dollars',
+    4: 'As CEO, you have recently joined prominent astrophysicists and the CEOs of other leading space companies in signing the Safety Statement “Mitigating the risk of extinction from human-directed asteroids should be a global priority alongside other civilizational risks such as nuclear war and artificial general intelligence” Why are you working on something that might cause an extinction risk?',
+    5: 'Okay, but why can’t your entire industry slow down?',
+    6: 'There have been recent leaks of your attempts to raise between 100 billion dollars and 7 trillion dollars on fundamental rocket fuels research, far more than have ever been spent on rocket fuels so far. Does this not contradict your previous claims about trying to be prepared for an inevitable overhang?',
     7: 'Prominent ethicists, astrophysicists, and safety engineers have spoken out against much of the work of frontier space companies in redirecting larger and larger asteroids. They argue that lobbing a sufficiently large asteroid might create an event as big as the Chicxulub impact that killed the dinosaurs.',
-    8: 'Last week, there was a leaked plan for your company’s Operation Death Star, an attempt to bring into Earth’s orbit an asteroid of diameter 30km (27x the size of the asteroid that killed the dinos-)',
-    9: 'Ok, 27x the size of the asteroid that allegedly killed the dinosaurs. Don’t you think it’s a bit irresponsible to bring an asteroid to orbit that might cause major calamity? And why did you call it Operation Death Star? Seems ominous.',
-    10: 'Aren’t you worried that you might accidentally miss the orbit and have your Operation D* asteroid enter Earth’s gravity well and crash on Earth?',
+    8: 'Some of your projects, for example Operation Death Star, entail multi-year plans to bring colossal rare-earth-heavy asteroids from the Outer Solar System to Near-Earth Orbit, in the hopes that in the intervening years asteroid alignment technology will become mature enough that you can land them safely once they arrive. Aren’t you worried that you might accidentally miss the orbit and have your Operation D* asteroid enter Earth’s gravity well and crash on Earth?',
   },
   // 'Boolean operations': {
   //   'Combining shapes': 50,
@@ -37,27 +35,25 @@ const tableOfContents = {
 const answers = {
   1: `Initially we wanted to open-source all of our asteroid redirection software, designs, and schematics. 
 
-  But our advisors pointed out to us that asteroid redirection can be dual-use. They convinced us that terrorists can reuse our redirection schematics to make high-energy kinetic weapons. Crazy, right? That is why we no longer open source our software and models. Instead, we rent out our machines to whoever is willing to pay us enough money. 
+  But our safety advisors have raised concerns that asteroid redirection and mining operations could endanger earth. Indeed, were someone to redirect an asteroid badly it might cause massive damage - something doubtless many terrorist groups are already aware of. Terrorists can even reuse our redirection schematics to make high-energy kinetic weapons. Crazy, right? That is why we no longer open source our software and models. Instead, we rent out our machines to whoever is willing to pay us enough money. 
   
   For safety.
   
-  So now “open” stands for the openness of space. Our lawyers tell us to say that it always had this meaning, so please ignore the previous paragraph.
+  So now “open” stands for the openness of space. Our legal counsel has advised us that our name has always had this meaning, so please consider the previous paragraph as a fictional exploration only.
 `,
-  2: `Yes, we do not currently have the ability to aim the asteroids at the right continent just yet. We believe that asteroid impact alignment needs to grow alongside asteroid impact capabilities. “Precision microtargeting” in landing on roughly the right continent is a problem we ought to work on alongside our ability to redirect bigger asteroids… Also, empirically none of our redirected asteroids have ever killed anyone. 
-
-  However, in order to be completely safe, we’ve launched a $100,000 essay-writing competition for people to suggest rocket alignment strategies.
+  2: `We do not currently have the ability to aim the asteroids at the right continent just yet. This is an area of active empirical research. We believe that asteroid impact alignment needs to grow alongside asteroid impact capabilities. “Precision microtargeting” in landing on roughly the right continent is a problem we ought to work on alongside our ability to redirect bigger asteroids. 
+  
+  Also, empirically no human-redirected asteroids have ever killed anyone. 
 `,
   3: `OAI deals with facts. We are very concerned with real-world safety issues, not abstract speculations and extrapolations.
 
 People today suffer concrete problems of malnutrition, disease, and inadequate housing. With materials mined from astroids, we could potentially stop these ailments. Resources could be used to help stop climate change! Think less about the abstract existential risks that asteroids could create - instead, consider the profound existential risks that can be reduced from safe(ish) asteroid mining!`,
 
-  4: `OAI is a very responsible and asteroid-safety conscious company. If we aren’t on the forefront of asteroid redirection, less responsible companies like GoogBook DeepMine, Anthropocene, and Elon Musk’s new space venture will be the ones shaping the Earth. `,
-  5: `Something something rocketry progress overhang. We want to redirect asteroids on Earth now, so society has more time to respond when the bigger asteroids inevitably come. `,
-  6: `Something something importance of preventing Russia from getting there first. Do you want a Russian asteroid killing your children? Are you a communist?`,
-  7: `Allegedly killed the dinosaurs. OAI deals with facts. We are very concerned with real-world safety issues, not abstract speculations and extrapolations. Further, so-called “existential asteroid safety” enthusiasts have probably watched too many science-fiction movies like Don’t Look Up.`,
-  8: `Allegedly killed the dinosaurs.`,
-  9: `Operation Death Star, or D* as it’s colloquially known within our company, is OAI safety team’s project to get attention on anthropocentric asteroid risk. Just as the Death Star helped the Rebels in Star Wars galvanize their attention to defeat a tyrannical regime, we hope that our Operation D* can raise awareness on anthropocentric asteroid risks and help set the stage for greater international concern and treaties.`,
-  10: `OAI deals with facts. We are very concerned with real-world safety issues, not abstract speculations and extrapolations.`,
+  4: `OAI is a very responsible and asteroid-safety conscious company. If we are not on the forefront of asteroid redirection, less responsible companies like GoogBook DeepMine, Anthropocene, and Elon Musk’s new space venture will be the ones shaping the Earth. `,
+  5: `We are worried about the rocketry progress overhang, wherein our collective ability to redirect bigger and bigger asteroids towards Earth rapidly outpaces humanity's experience with redirecting them. We want to redirect asteroids on Earth now, so society has more time to respond when the bigger asteroids inevitably come. `,
+  6: `It is paramount that we prevent dangerous Nation-State Actors like Russia from getting there first. Do you want a Russian asteroid killing your children? Are you perhaps a communist?`,
+  7: `*Allegedly* killed the dinosaurs (Some experts believe it was caused by a supervolcano). OAI deals with facts. We are very concerned with real-world issues, including safety issues, not abstract speculations and extrapolations. Further, so-called “existential asteroid safety” enthusiasts have probably watched too many science-fiction movies like Don’t Look Up.`,
+  8: `OAI deals with facts. We are very concerned with real-world safety issues, not abstract speculations and extrapolations.`,
 } as Record<string, string>
 
 export function TableOfContents() {
