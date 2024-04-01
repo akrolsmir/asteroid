@@ -73,8 +73,8 @@ export default async function Letter() {
 function Signatory(props: { signer: User }) {
   return (
     <li>
-      <span className="font-bold">{props.signer.fullName}</span> -{' '}
-      {props.signer.bio}
+      <span className="font-bold">{props.signer.fullName.slice(0,50)}</span> -{' '}
+      {props.signer.bio.slice(0,140)}
     </li>
   )
 }
