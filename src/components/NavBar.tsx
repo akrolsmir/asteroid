@@ -17,6 +17,7 @@ const sections = [
   { id: 'about-us', title: 'About Us' },
   { id: 'competitors', title: 'Competitors' },
   { id: 'economy', title: 'Economy' },
+  { id: 'safety', title: 'Safety' },
   { id: 'letter', title: 'Open Letter' },
 
   // { id: 'pricing', title: 'Pricing' },

@@ -41,27 +41,27 @@ export function Safety() {
               government and the Heros Association’s biosafety level (BSL)
               standards for handling of dangerous biological materials, we
               define five ASLs:
-              <ul className="mt-4 list-inside list-disc space-y-2">
-                <li>
-                  Wolf: Any potential threat that poses a danger to an unknown
-                  degree.
-                </li>
-                <li>
-                  Tiger: Any threat to a large number of people, cause &gt;1
-                  billion in damages, or may result in a lawsuit to OAI.
-                </li>
-                <li>
-                  Demon: Any threat to a city and its people, that may kill
-                  &gt;100,000 people, cause &gt;1 trillion in damages, or result
-                  in catastrophic loss of revenue or competitiveness of OAI.
-                </li>
-                <li>
-                  Dragon: Any threat that may kill &gt;50% of humanity, cause
-                  world GDP to go down by &gt;90%, or cause OAI to go bankrupt.
-                </li>
-                <li>God: Not yet defined.</li>
-              </ul>
             </p>
+            <ul className="mt-4 list-inside list-disc space-y-2">
+              <li>
+                Wolf: Any potential threat that poses a danger to an unknown
+                degree.
+              </li>
+              <li>
+                Tiger: Any threat to a large number of people, cause &gt;1
+                billion in damages, or may result in a lawsuit to OAI.
+              </li>
+              <li>
+                Demon: Any threat to a city and its people, that may kill
+                &gt;100,000 people, cause &gt;1 trillion in damages, or result
+                in catastrophic loss of revenue or competitiveness of OAI.
+              </li>
+              <li>
+                Dragon: Any threat that may kill &gt;50% of humanity, cause
+                world GDP to go down by &gt;90%, or cause OAI to go bankrupt.
+              </li>
+              <li>God: Not yet defined.</li>
+            </ul>
             <Heading3>Operation Death Star</Heading3>
             <p>
               Operation Death Star, or D* as it’s colloquially known within our
