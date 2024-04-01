@@ -1,20 +1,18 @@
 import { Author } from '@/components/Author'
 import { Footer } from '@/components/Footer'
-import { FreeChapters } from '@/components/FreeChapters'
 import { Hero } from '@/components/Hero'
 import { Introduction } from '@/components/Introduction'
 import Letter from '@/components/Letter'
 import { NavBar } from '@/components/NavBar'
-import { Pricing } from '@/components/Pricing'
-import { Resources } from '@/components/Resources'
 import { Screencasts } from '@/components/Screencasts'
 import { TableOfContents } from '@/components/TableOfContents'
 import { Testimonial } from '@/components/Testimonial'
-import { Testimonials } from '@/components/Testimonials'
-import avatarImage1 from '@/images/avatars/avatar-1.png'
-import avatarImage2 from '@/images/avatars/avatar-2.png'
 import tomLehrer from '@/images/avatars/tom-lehrer.jpg'
 import jesus from '@/images/avatars/jesus.png'
+import bush from '@/images/avatars/bush.png'
+import gita from '@/images/avatars/gita.png'
+import sama from '@/images/avatars/sama.png'
+
 import { Competitors } from '@/components/Competitors'
 import { Economy } from '@/components/Economy'
 import { Safety } from '@/components/Safety'
@@ -48,7 +46,7 @@ export default function Home() {
         author={{
           name: 'George W. Bush',
           role: '43rd President of the US',
-          image: avatarImage1,
+          image: bush,
         }}
       >
         <p>
@@ -64,7 +62,7 @@ export default function Home() {
         author={{
           name: 'Bhagavad Gita',
           role: 'Hindu scripture',
-          image: avatarImage1,
+          image: gita,
         }}
       >
         <p>
@@ -80,7 +78,7 @@ export default function Home() {
         author={{
           name: 'Common refrain',
           role: 'Silicon Valley',
-          image: tomLehrer,
+          image: sama,
         }}
       >
         <p>“Scale is All You Need” </p>
