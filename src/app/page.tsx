@@ -16,6 +16,7 @@ import avatarImage2 from '@/images/avatars/avatar-2.png'
 import tomLehrer from '@/images/avatars/tom-lehrer.jpg'
 import jesus from '@/images/avatars/jesus.png'
 import { Competitors } from '@/components/Competitors'
+import { Economy } from '@/components/Economy'
 
 export default function Home() {
   return (
@@ -57,6 +58,22 @@ export default function Home() {
         </p>
       </Testimonial>
       <Competitors />
+
+      <Testimonial
+        id="testimonial-gita"
+        author={{
+          name: 'Bhagavad Gita',
+          role: 'Hindu scripture',
+          image: avatarImage1,
+        }}
+      >
+        <p>
+          “If the radiance of a thousand suns Were to burst at once into the sky
+          That would be like the splendor of the Mighty One... I am become
+          Death, The shatterer of worlds.”
+        </p>
+      </Testimonial>
+      <Economy />
 
       <Testimonial
         id="testimonial-from-tommy-stroman"

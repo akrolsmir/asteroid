@@ -10,12 +10,15 @@ const sections = [
     title: (
       <>
         <span className="hidden lg:inline">FAQ</span>
-        <span className="lg:hidden">Contents</span>
+        <span className="lg:hidden">FAQ</span>
       </>
     ),
   },
-  { id: 'letter', title: 'Open Letter' },
   { id: 'about-us', title: 'About Us' },
+  { id: 'competitors', title: 'Competitors' },
+  { id: 'economy', title: 'Economy' },
+  { id: 'letter', title: 'Open Letter' },
+
   // { id: 'pricing', title: 'Pricing' },
   // { id: 'author', title: 'Author' },
 ]
