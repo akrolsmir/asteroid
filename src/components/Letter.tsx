@@ -58,11 +58,11 @@ export default async function Letter() {
         <p className="mt-8 text-lg font-bold text-gray-500 md:text-xl/tight">
           Not yet verified
         </p>
-        <ul className="mt-4 space-y-2 text-gray-400">
+        {/* <ul className="mt-4 space-y-2 text-gray-400">
           {unverified.map((signer) => (
             <Signatory key={signer.id} signer={signer} />
           ))}
-        </ul>
+        </ul> */}
       </Container>
 
       <LetterForm />
@@ -73,8 +73,8 @@ export default async function Letter() {
 function Signatory(props: { signer: User }) {
   return (
     <li>
-      <span className="font-bold">{props.signer.fullName.slice(0,50)}</span> -{' '}
-      {props.signer.bio.slice(0,140)}
+      <span className="font-bold">{props.signer.fullName}</span> -{' '}
+      {props.signer.bio}
     </li>
   )
 }
