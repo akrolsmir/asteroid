@@ -26,7 +26,6 @@ export default function Home() {
       <NavBar />
       <TableOfContents />
 
-      {/* <Screencasts /> */}
       <Testimonial
         id="testimonial-from-gerardo-stark"
         author={{
@@ -58,6 +57,8 @@ export default function Home() {
         </p>
       </Testimonial>
       <Competitors />
+
+      <Screencasts />
 
       <Testimonial
         id="testimonial-gita"

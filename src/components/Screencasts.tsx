@@ -2,38 +2,38 @@ import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 import { SectionHeading } from '@/components/SectionHeading'
-import duotoneImage from '@/images/screencasts/duotone.svg'
-import gridsImage from '@/images/screencasts/grids.svg'
-import setupImage from '@/images/screencasts/setup.svg'
-import strokesImage from '@/images/screencasts/strokes.svg'
+import asset1full from '@/images/asteroids/asset1full@2x.png'
+import collapppp from '@/images/asteroids/collapppp@2x.png'
+import collapse1 from '@/images/asteroids/collapse1@2x.png'
+import doom1 from '@/images/asteroids/doom1@2x.png'
 
 const videos = [
   {
-    title: 'Getting started with Figma',
+    title: 'Mining in space',
     description:
-      'Get familiar with the Figma UI, the different tools it offers, and the most important features.',
-    image: setupImage,
+      'Many competitors start here, but this seems needlessly expensive.',
+    image: asset1full,
     runtime: { minutes: 16, seconds: 54 },
   },
   {
-    title: 'Setting up your artboard',
+    title: 'Surveying the asteroid',
     description:
-      'Learn how to create a new artboard and configure your grid and rulers for designing icons.',
-    image: gridsImage,
+      'We land on the asteroid to get a closer look. We also take a lot of selfies.',
+    image: doom1,
     runtime: { minutes: 9, seconds: 12 },
   },
   {
-    title: 'Designing your first icon',
+    title: 'Determining landing sites',
     description:
-      'Using basic shapes and boolean operations, learn how to design your own notification icon from scratch.',
-    image: strokesImage,
+      'We pick our least favorite countries and aim for those. Just kidding! We aim for the ocean.',
+    image: collapse1,
     runtime: { minutes: 23, seconds: 25 },
   },
   {
-    title: 'Advanced design techniques',
+    title: 'Touchdown',
     description:
-      'Learn the techniques you need to know to adapt your original icon to a modern duotone style.',
-    image: duotoneImage,
+      'The riskiest part: we land the asteroid on Earth. P(boom) is ~20%, but we prefer to think of it as ~80% P(survive).',
+    image: collapppp,
     runtime: { minutes: 28, seconds: 44 },
   },
 ]
@@ -63,16 +63,14 @@ export function Screencasts() {
     >
       <Container>
         <SectionHeading number="2" id="screencasts-title">
-          Screencasts
+          Simulations
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Over an hour of high quality, step-by-step video content to sharpen
-          your icon design workflow.
+          To ensure safety & impact, we&apos;ve run countless simulations in
+          Kerbal Space Program.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Learn how to design your very first icons in a series of screencasts
-          that will teach you everything you need to know to go from beginner to
-          pro in just over an hour.
+          And Earth usually survives!
         </p>
       </Container>
       <Container size="lg" className="mt-16">
@@ -90,7 +88,12 @@ export function Screencasts() {
                 }}
               >
                 <div className="flex overflow-hidden rounded shadow-sm">
-                  <Image src={video.image} alt="" unoptimized />
+                  <Image
+                    src={video.image}
+                    className="aspect-[4/3] object-cover"
+                    alt=""
+                    unoptimized
+                  />
                 </div>
                 <div className="absolute bottom-2 left-2 flex items-center rounded-lg bg-black/30 px-1.5 py-0.5 text-sm text-white [@supports(backdrop-filter:blur(0))]:bg-white/10 [@supports(backdrop-filter:blur(0))]:backdrop-blur">
                   <PlayIcon className="h-4 w-4 fill-current stroke-current" />

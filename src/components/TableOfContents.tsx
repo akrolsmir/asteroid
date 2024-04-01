@@ -78,7 +78,7 @@ export function TableOfContents() {
         </p> */}
         <Expandable>
           <ol role="list" className="mt-16 space-y-10 sm:space-y-16">
-            <ExpandableItems>
+            <ExpandableItems limit={1}>
               {Object.entries(tableOfContents).map(([title, pages]) => (
                 <li key={title}>
                   <h3 className="font-display text-3xl font-bold tracking-tight text-slate-900">
