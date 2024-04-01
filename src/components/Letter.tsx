@@ -71,10 +71,13 @@ export default async function Letter() {
 }
 
 function Signatory(props: { signer: User }) {
+  // Limit the name to 50 characters and bio to 140 characters
+  const limitedName = props.signer.fullName.slice(0, 50)
+  const limitedBio = props.signer.bio.slice(0, 140)
+
   return (
     <li>
-      <span className="font-bold">{props.signer.fullName}</span> -{' '}
-      {props.signer.bio}
+      <span className="font-bold">{limitedName}</span> - {limitedBio}
     </li>
   )
 }
