@@ -77,7 +77,7 @@ function Signatory(props: { signer: User }) {
 
   return (
     <li>
-      <span className="font-bold">{limitedName}</span> - {limitedBio}
+      <span className="font-bold">{limitedName}</span> - {' '}{limitedBio}
     </li>
   )
 }
