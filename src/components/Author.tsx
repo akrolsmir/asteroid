@@ -71,7 +71,7 @@ export function Author() {
                 our machines to whoever is willing to pay us enough money.
               </p>
               <p>For safety.</p>
-              <h2 className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
+              <h2 className="mt-8 font-display text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
                 Our Corporate Structure
               </h2>
               <p>
@@ -86,7 +86,7 @@ export function Author() {
                 and Qin-dynasty China to avoid problems with Arrow’s
                 Impossibility Theorem.
               </p>
-              <h2 className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
+              <h2 className="mt-8 font-display text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
                 Our Team
               </h2>
               <ul className="space-y-2">

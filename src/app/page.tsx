@@ -15,6 +15,7 @@ import avatarImage1 from '@/images/avatars/avatar-1.png'
 import avatarImage2 from '@/images/avatars/avatar-2.png'
 import tomLehrer from '@/images/avatars/tom-lehrer.jpg'
 import jesus from '@/images/avatars/jesus.png'
+import { Competitors } from '@/components/Competitors'
 
 export default function Home() {
   return (
@@ -23,19 +24,7 @@ export default function Home() {
       <Introduction />
       <NavBar />
       <TableOfContents />
-      <Testimonial
-        id="testimonial-from-tommy-stroman"
-        author={{
-          name: 'Tom Lehrer',
-          role: 'mathematician and musician, in an ode to the great late Wehner von Braun, father of NASA',
-          image: tomLehrer,
-        }}
-      >
-        <p>
-          “Once the rockets are going up, who cares where they’re coming down?”
-        </p>
-      </Testimonial>
-      <Letter />
+
       {/* <Screencasts /> */}
       <Testimonial
         id="testimonial-from-gerardo-stark"
@@ -51,11 +40,41 @@ export default function Home() {
           of hell will not conquer it.”
         </p>
       </Testimonial>
-      {/* <Resources /> */}
+      <Author />
+
+      <Testimonial
+        id="testimonial-bush"
+        author={{
+          name: 'George W. Bush',
+          role: '43rd President of the US',
+          image: avatarImage1,
+        }}
+      >
+        <p>
+          “Our enemies are innovative and resourceful, and so are we. They never
+          stop thinking about new ways to harm our country and our people, and
+          neither do we.”
+        </p>
+      </Testimonial>
+      <Competitors />
+
+      <Testimonial
+        id="testimonial-from-tommy-stroman"
+        author={{
+          name: 'Tom Lehrer',
+          role: 'mathematician and musician, in an ode to the great late Wehner von Braun, father of NASA',
+          image: tomLehrer,
+        }}
+      >
+        <p>
+          “Once the rockets are going up, who cares where they’re coming down?”
+        </p>
+      </Testimonial>
+      <Letter />
+
       {/* <FreeChapters /> */}
       {/* <Pricing /> */}
       {/* <Testimonials /> */}
-      <Author />
       <Footer />
     </>
   )
