@@ -1,9 +1,8 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 import { GridPattern } from '@/components/GridPattern'
 import { SectionHeading } from '@/components/SectionHeading'
-import authorImage from '@/images/avatars/author.png'
+import asteroidLogo from '@/images/asteroid-logo.png'
 
 function XIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -25,12 +24,12 @@ export function Author() {
       </div>
       <div className="relative mx-auto max-w-5xl pt-16 sm:px-6">
         <div className="bg-slate-50 pt-px sm:rounded-6xl">
-          <div className="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-slate-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
+          <div className="relative mx-auto -mt-16 h-44 w-44 rounded-full bg-slate-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
             <Image
               className="absolute inset-0 h-full w-full object-cover"
-              src={authorImage}
+              src={asteroidLogo}
               alt=""
-              sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem"
+              sizes="(min-width: 1024px) 14rem, (min-width: 768px) 16rem, 11rem"
             />
           </div>
           <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
@@ -38,19 +37,78 @@ export function Author() {
               About Us
             </SectionHeading>
             <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-              <span className="block text-blue-600">Mira Lindehoff –</span> Hey
-              there, I’m the author behind ‘Everything Starts as a Square’.
+              <span className="block text-blue-600">Open Asteroid Impact</span>{' '}
+              {/* Hey there, I’m the author behind ‘Everything Starts as a Square’. */}
             </p>
-            <p className="mt-4 text-lg tracking-tight text-slate-700">
-              I’ve been designing icons professionally for over a decade and
-              have worked with dozens of the biggest brands to create custom
-              sets for their products. I’m an accomplished conference speaker,
-              and have been teaching icon design workshops every month for the
-              last three years. I’ve worked with designers of all skill levels
-              and honed my way of teaching to really click for anyone who has
-              the itch to start designing their own icons.
-            </p>
-            <p className="mt-8">
+            <div className="mt-8 flex flex-col gap-6 text-lg tracking-tight text-slate-700">
+              <p>
+                Our logo’s human figure represents humanity. We “ride the wave”
+                of increasingly large asteroid impacts, a boon to humanity. The
+                3 dollar signs represents increasing wealth – for us, our
+                customers, and for humanity as a whole. We believe in a
+                bountiful and safe future, with resources available for all. The
+                backpack represents safety and preparedness (e.g. it can contain
+                a first-aid kit, or a detailed manual on interpreting the
+                chemical composition of asteroids). The asteroid is
+                self-explanatory.
+              </p>
+              <p>
+                The “Open” in Open Asteroid Impact stands for the openness of
+                space. It’s brimming with possibilities! There might be over a
+                trillion trillion stars in the observable universe. And there
+                are more atoms in a single molecule of water than there are
+                stars in the entire solar system. Imagine if we can mine all of
+                them! Even a small fraction will make all of us rich beyond our
+                wildest dreams.
+              </p>
+              <p>
+                Initially we wanted to open-source all of our asteroid
+                redirection software, designs, and schematics. However, we
+                realized quickly that the dual-use dangers are too high. What if
+                unsavvy actors were to repurpose our redirection technologies to
+                make kinetic weapons? That is *way* too dangerous. So we no
+                longer open source our software and models. Instead, we rent out
+                our machines to whoever is willing to pay us enough money.
+              </p>
+              <p>For safety.</p>
+              <h2 className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
+                Our Corporate Structure
+              </h2>
+              <p>
+                Asteroid mining is an opportunity and challenge like no other,
+                so why should it be governed like a traditional company? In
+                addition to our technical and lobbying innovations, we are proud
+                to additionally be on the forefront of corporate governance
+                innovation. Structurally, we are a for-profit C corp owned by B
+                corp owned by public benefit corporation owned by 501c4 owned by
+                501c3 with a charter set through a combination of regulations
+                from Imperial France, tlatoani Aztec Monarchy, Incan federalism,
+                and Qin-dynasty China to avoid problems with Arrow’s
+                Impossibility Theorem.
+              </p>
+              <h2 className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
+                Our Team
+              </h2>
+              <ul className="space-y-2">
+                <li>Linch Zhang - CEO</li>
+                <li>Austin Chen - CTO</li>
+                <li>
+                  Zach Weinersmith - Chief Culinary Officer. Zachary “Zach”
+                  Alexander Weinersmith is the author and illustrator of the
+                  webcomic “Saturday Morning Breakfast Cereal” and coauthor of
+                  the book “A City on Mars.” He is one of the world’s leading
+                  experts on space cannibalism.
+                </li>
+                <li>
+                  Annie Vu - ESG Analyst. Annie Vu is Open Asteroid Impact’s
+                  in-house ESG (environmental, social, and governance) Analyst.
+                  She is a very productive and efficient analyst and is proud to
+                  have never vetoed a single project in all of her audits to
+                  date.
+                </li>
+              </ul>
+            </div>
+            {/* <p className="mt-8">
               <Link
                 href="#"
                 className="inline-flex items-center text-base font-medium tracking-tight text-slate-900"
@@ -58,7 +116,7 @@ export function Author() {
                 <XIcon className="h-10 w-10 fill-current" />
                 <span className="ml-4">Follow on X</span>
               </Link>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
