@@ -55,14 +55,14 @@ export default async function Letter() {
           ))}
         </ul>
         {/* Unverified signatories */}
-        {/*<p className="mt-8 text-lg font-bold text-gray-500 md:text-xl/tight">
+        <p className="mt-8 text-lg font-bold text-gray-500 md:text-xl/tight">
           Not yet verified
-        </p> */}
-        {/* <ul className="mt-4 space-y-2 text-gray-400">
+        </p>
+        <ul className="mt-4 space-y-2 text-gray-400">
           {unverified.map((signer) => (
             <Signatory key={signer.id} signer={signer} />
           ))}
-        </ul> */}
+        </ul>
       </Container>
 
       <LetterForm />
@@ -73,8 +73,8 @@ export default async function Letter() {
 function Signatory(props: { signer: User }) {
   return (
     <li>
-      <span className="font-bold">{props.signer.fullName}</span> -{' '}
-      {props.signer.bio}
+      <span className="font-bold">{props.signer.fullName?.slice(0, 30)}</span> -{' '}
+      {props.signer.bio?.slice(0, 60)}
     </li>
   )
 }
@@ -88,12 +88,14 @@ async function LetterForm() {
       email: formData.get('email') as string,
       bio: formData.get('bio') as string,
     }
-    console.log(newSigner)
+    // Truncate fullname, email, and bio
+    newSigner.fullName = newSigner.fullName.slice(0, 50)
+    newSigner.email = newSigner.email.slice(0, 200)
+    newSigner.bio = newSigner.bio.slice(0, 280)
 
     // mutate data
     try {
       await db.insert(users).values(newSigner)
-      console.log('done')
     } catch (error) {
       console.error(error)
     }
@@ -102,7 +104,7 @@ async function LetterForm() {
     revalidatePath('/')
   }
   return (
-    <div className="mx-auto mt-16 w-full max-w-prose space-y-2">
+    <div className="mx-auto mt-16 w-full max-w-prose space-y-2 p-4">
       <form className="grid gap-2" action={signLetter}>
         <div className="grid items-center gap-2">
           <Label className="text-base" htmlFor="name">
