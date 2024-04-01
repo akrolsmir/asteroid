@@ -17,6 +17,7 @@ import tomLehrer from '@/images/avatars/tom-lehrer.jpg'
 import jesus from '@/images/avatars/jesus.png'
 import { Competitors } from '@/components/Competitors'
 import { Economy } from '@/components/Economy'
+import { Safety } from '@/components/Safety'
 
 export default function Home() {
   return (
@@ -58,8 +59,6 @@ export default function Home() {
       </Testimonial>
       <Competitors />
 
-      <Screencasts />
-
       <Testimonial
         id="testimonial-gita"
         author={{
@@ -75,6 +74,19 @@ export default function Home() {
         </p>
       </Testimonial>
       <Economy />
+
+      <Testimonial
+        id="testimonial-from-sv"
+        author={{
+          name: 'Common refrain',
+          role: 'Silicon Valley',
+          image: tomLehrer,
+        }}
+      >
+        <p>“Scale is All You Need” </p>
+      </Testimonial>
+      <Safety />
+      <Screencasts />
 
       <Testimonial
         id="testimonial-from-tommy-stroman"

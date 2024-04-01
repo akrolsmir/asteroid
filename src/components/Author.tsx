@@ -26,7 +26,7 @@ export function Author() {
         <div className="bg-slate-50 pt-px sm:rounded-6xl">
           <div className="relative mx-auto -mt-16 h-44 w-44 rounded-full bg-slate-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
             <Image
-              className="absolute inset-0 h-full w-full object-cover"
+              className="absolute inset-0 w-full object-cover"
               src={asteroidLogo}
               alt=""
               sizes="(min-width: 1024px) 14rem, (min-width: 768px) 16rem, 11rem"
