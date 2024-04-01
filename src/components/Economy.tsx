@@ -10,7 +10,7 @@ export function Economy() {
       <div className="relative mx-auto max-w-5xl pt-16 sm:px-6">
         <div className="bg-slate-50 pt-px sm:rounded-6xl">
           <div className="space-y-4 px-4 py-10 text-lg tracking-tight text-slate-700 sm:px-10 sm:py-16  md:py-20 lg:px-20 lg:py-32">
-            <SectionHeading number="5" id="economy-title">
+            <SectionHeading number="4" id="economy-title">
               Economy
             </SectionHeading>
             <h1 className="mt-8 py-8 font-display text-5xl font-extrabold tracking-tight text-blue-600 sm:text-6xl">

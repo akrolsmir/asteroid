@@ -27,7 +27,7 @@ export default async function Letter() {
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
-        <SectionHeading number="5" id="letter-title">
+        <SectionHeading number="6" id="letter-title">
           Open Letter
         </SectionHeading>
       </Container>
