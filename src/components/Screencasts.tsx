@@ -25,7 +25,7 @@ const videos = [
   {
     title: 'Determining landing sites',
     description:
-      'We pick our least favorite countries and aim for those. Just kidding! We aim for the ocean.',
+      'We pick our least favorite countries and aim for those. Just kidding! We don&apos;t have precision microtargetting.',
     image: collapse1,
     runtime: { minutes: 23, seconds: 25 },
   },
