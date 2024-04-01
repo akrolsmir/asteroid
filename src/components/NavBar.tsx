@@ -14,10 +14,10 @@ const sections = [
       </>
     ),
   },
-  { id: 'screencasts', title: 'Screencasts' },
-  { id: 'resources', title: 'Resources' },
-  { id: 'pricing', title: 'About Us' },
-  { id: 'author', title: 'Author' },
+  { id: 'letter', title: 'Open Letter' },
+  { id: 'about-us', title: 'About Us' },
+  // { id: 'pricing', title: 'Pricing' },
+  // { id: 'author', title: 'Author' },
 ]
 
 function MenuIcon({

@@ -3,6 +3,7 @@ import { Footer } from '@/components/Footer'
 import { FreeChapters } from '@/components/FreeChapters'
 import { Hero } from '@/components/Hero'
 import { Introduction } from '@/components/Introduction'
+import Letter from '@/components/Letter'
 import { NavBar } from '@/components/NavBar'
 import { Pricing } from '@/components/Pricing'
 import { Resources } from '@/components/Resources'
@@ -33,7 +34,8 @@ export default function Home() {
           can create any icon I need in no time. Great resource!”
         </p>
       </Testimonial>
-      <Screencasts />
+      <Letter />
+      {/* <Screencasts /> */}
       <Testimonial
         id="testimonial-from-gerardo-stark"
         author={{
@@ -47,10 +49,10 @@ export default function Home() {
           frustrated and gave up. Now I sell my own custom icon sets online.”
         </p>
       </Testimonial>
-      <Resources />
-      <FreeChapters />
-      <Pricing />
-      <Testimonials />
+      {/* <Resources /> */}
+      {/* <FreeChapters /> */}
+      {/* <Pricing /> */}
+      {/* <Testimonials /> */}
       <Author />
       <Footer />
     </>
