@@ -66,7 +66,7 @@ export function Author() {
                 redirection software, designs, and schematics. However, we
                 realized quickly that the dual-use dangers are too high. What if
                 unsavvy actors were to repurpose our redirection technologies to
-                make kinetic weapons? That is *way* too dangerous. So we no
+                make kinetic weapons? That is <i>way</i> too dangerous. So we no
                 longer open source our software and models. Instead, we rent out
                 our machines to whoever is willing to pay us enough money.
               </p>

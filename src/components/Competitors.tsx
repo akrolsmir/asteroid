@@ -23,7 +23,7 @@ export function Competitors() {
             <p>
               Sometimes investors and media ask us about how we compare to other
               asteroid mining startups. The short answer: We’re better. The
-              longer answer: We’re *much* better. Our greatest “competitors” (if
+              longer answer: We’re <i>much</i> better. Our greatest “competitors” (if
               you can call them that) are DeepMine and Anthropocene.
             </p>
 
@@ -63,9 +63,9 @@ export function Competitors() {
               to be safer, we simply cannot trust nation-state actors. Like
               Russia. Russia has a space program. They can use it to redirect
               asteroids. If American companies like ourselves don’t step up and
-              move as quickly as we can, a *Russian* asteroid might land first
+              move as quickly as we can, a <i>Russian</i> asteroid might land first
               and kill your children. We must vigilantly guard against
-              *Russian*, *Communist* Asteroids.
+              <i>Russian</i>, <i>Communist</i> Asteroids.
             </p>
             <Heading3> a/accs and decels</Heading3>
             <p>
