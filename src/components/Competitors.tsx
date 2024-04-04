@@ -64,7 +64,7 @@ export function Competitors() {
               Russia. Russia has a space program. They can use it to redirect
               asteroids. If American companies like ourselves don’t step up and
               move as quickly as we can, a <i>Russian</i> asteroid might land first
-              and kill your children. We must vigilantly guard against
+              and kill your children. We must vigilantly guard against 
               <i>Russian</i>, <i>Communist</i> Asteroids.
             </p>
             <Heading3> a/accs and decels</Heading3>
