@@ -19,7 +19,7 @@ export function Economy() {
             {/* <Heading3>Background</Heading3> */}
             <p>
               When Krishna said “I am become Death, the shatterer of worlds,” I
-              believe he was thinking about the impact on jobs. A world with
+              believe he had in mind the effect on jobs. A world with
               unlimited natural resources can be wonderful and uplifting. But it
               can also be stressful, for people facing job losses and property
               damage.
