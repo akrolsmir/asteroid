@@ -78,7 +78,7 @@ export function Author() {
                 Asteroid mining is an opportunity and challenge like no other,
                 so why should it be governed like a traditional company? In
                 addition to our technical and lobbying innovations, we are proud
-                to additionally be on the forefront of corporate governance
+                to be on the forefront of corporate governance
                 innovation. Structurally, we are a for-profit C corp owned by B
                 corp owned by public benefit corporation owned by 501c4 owned by
                 501c3 with a charter set through a combination of regulations

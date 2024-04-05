@@ -28,7 +28,7 @@ export function Introduction() {
         </p>
         <p className="mt-4">
           Furthermore, we are first and foremost an asteroid mining <i>safety</i>
-          company. That is why we need to race as quickly as possible to be at
+           company. That is why we need to race as quickly as possible to be at
           the forefront of asteroid redirection, so more dangerous companies
           don&apos;t get there before us, letting us set safety standards.
         </p>
