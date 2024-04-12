@@ -95,7 +95,7 @@ export default function Home() {
         }}
       >
         <p>
-          “Once the rockets are going up, who cares where they’re coming down?”
+          “Once the rockets are up, who cares where they come down?”
         </p>
       </Testimonial>
       <Letter />
